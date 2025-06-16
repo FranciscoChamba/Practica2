@@ -202,10 +202,8 @@ public class Practica2 {
     }
 
     /**
-     * Control de acceso en un sistema de seguridad Haga un registro de intentos
-     * de acceso con ID de usuario y contraseña. Recorre intentos: si usuario no
-     * existe, registrar “ataque”; si existe pero contraseña falla > 3 veces,
-     * bloquear cuenta. Al final, mostrar lista de usuarios bloqueados.
+     * Enum donde se guarda el registro de los id de usuarios
+     *  con sus respectivas claves
      */
     public enum Registro {
         USUARIO1("juan123", "claveJuan2024"),
@@ -235,6 +233,7 @@ public class Practica2 {
         }
 
     }
+
 
     public void Contro_acceso() {
         Scanner sc = new Scanner(System.in);
