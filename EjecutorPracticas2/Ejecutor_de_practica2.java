@@ -10,6 +10,8 @@ import java.util.Scanner;
 /**
  *
  * @author Usuario iTC
+ *En este espacio se encuentra el ejecutor donde
+ * se pude probar la ejecucion de los programas
  */
 public class Ejecutor_de_practica2 {
     private static Scanner sc = new Scanner(System.in);
