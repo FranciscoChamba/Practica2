@@ -1,4 +1,4 @@
-package views;
+package EjecutorPracticas2;
 
 import PracticaNro2.EjerciciosDoWhile;
 import PracticaNro2.EjerciciosFor;
