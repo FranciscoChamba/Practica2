@@ -163,10 +163,7 @@ public class Practica2 {
     }
 
     /**
-     * Control de inventario en tienda de electrónica Una tienda quiere procesar
-     * la lista de productos en stock. Por cada producto, si la cantidad es
-     * menor a 5, agregarlo a la orden de reposición. Además, calcular el total
-     * de unidades a reabastecer.
+     * Enum donde se guarda la informacion del producto
      */
     public enum Producto {
         PRODUCTO1("Monitor 24", 3),
@@ -185,6 +182,14 @@ public class Practica2 {
         }
     }
 
+    /**
+     * Este programa permite gestionar el inventario de una tienda de productos
+     * electrónicos. Recorre la lista de productos disponibles y verifica la
+     * cantidad en stock de cada uno. Si la cantidad de un producto es menor a 5
+     * unidades, se agrega a una orden de reposición. Al mismo tiempo, se
+     * calcula el total general de unidades que deben ser reabastecidas,
+     * facilitando así la toma de decisiones para mantener el inventario óptimo.
+     */
     public void Control_inventario() {
         Producto[] productos = Producto.values();
         int totalReponer = 0;
@@ -202,8 +207,13 @@ public class Practica2 {
     }
 
     /**
+<<<<<<< HEAD
      * Enum donde se guarda el registro de los id de usuarios
      *  con sus respectivas claves
+=======
+     * Control de acceso en un sistema de seguridad Enum donde se guarda los id
+     * de los usuarios registrados con sus respectivas claves .
+>>>>>>> 3627ec8 (codigos y ejecutor de la practica 2)
      */
     public enum Registro {
         USUARIO1("juan123", "claveJuan2024"),
@@ -234,7 +244,19 @@ public class Practica2 {
 
     }
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * Este programa simula un sistema de control de acceso con autenticación
+     * mediante ID de usuario y contraseña. Recorre varios intentos de inicio de
+     * sesión. Si el ID de usuario no existe en el registro, se considera un
+     * posible ataque y se registra como tal. Si el usuario existe pero falla su
+     * contraseña más de 3 veces, su cuenta se bloquea. Al finalizar el proceso,
+     * se muestra una lista con los usuarios que han sido bloqueados por
+     * intentos fallidos excesivos.
+     */
+>>>>>>> 3627ec8 (codigos y ejecutor de la practica 2)
     public void Contro_acceso() {
         Scanner sc = new Scanner(System.in);
         Registro[] registro = Registro.values();
@@ -261,8 +283,9 @@ public class Practica2 {
             }
             if (!acceso_concedido && intentos < 3) {
                 System.out.println(" Credenciales incorrectas. Intentos restantes: " + (3 - intentos));
-            } if(!acceso_concedido) {
-                System.out.println(" Acceso bloqueado por demasiados intentos:"+id);
+            }
+            if (!acceso_concedido) {
+                System.out.println(" Acceso bloqueado por demasiados intentos:" + id);
 
             }
 
